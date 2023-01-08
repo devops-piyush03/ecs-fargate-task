@@ -6,5 +6,5 @@ variable "az_count" {
 
 variable "cidr" {
   description = "CIDR for vpc"
-  default     = "172.27.0.0/16"
+  default     = "172.28.0.0/16"
 }
