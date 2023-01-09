@@ -6,6 +6,6 @@ output "service_name" {
   value = "${aws_ecs_service.main.name}"
 }
 
-output "Loadbalancer_url" {
+output "loadbalancer_url" {
   value = "http://${aws_alb.main.dns_name}"
 }
