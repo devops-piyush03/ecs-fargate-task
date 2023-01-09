@@ -7,7 +7,7 @@ module "ecs" {
   vpc_id = module.networking.vpc_id
   public_subnet = flatten([module.networking.public_subnets_id])
   private_subnet = flatten([module.networking.private_subnets_id])
-
+  lb_url = module.ecs.Loadbalancer_url
 }
 module "networking" {
   source = "./modules/networking"
