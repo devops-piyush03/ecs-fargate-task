@@ -33,7 +33,7 @@ variable "private_subnet" {
   default = []
 }
 variable "health_check_path" {
-  default = "/"
+  default = "/health"
 }
 variable "ecs_task_execution_role_name" {
   description = "ECS task execution role name"
