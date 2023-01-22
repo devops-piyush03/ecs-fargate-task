@@ -9,7 +9,7 @@ stages {
   steps {
    sh '''
    cd ecs-fargate-task/
-   terraform apply -out=tfplan.out
+   terraform apply "tfplan.out"
    
    ''' 
        }
