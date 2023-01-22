@@ -9,7 +9,7 @@ stages {
   steps {
    sh '''
    cd /var/lib/jenkins/workspace/terraform-plan/ecs-fargate-task/
-   terraform destroy
+   terraform destroy --auto-approve
    
    ''' 
        }
