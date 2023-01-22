@@ -8,7 +8,7 @@ stages {
     stage ('Terraform apply') { 
   steps {
    sh '''
-   cd ecs-fargate-task/
+   cd /var/lib/jenkins/workspace/terraform-plan/ecs-fargate-task/
    terraform apply "tfplan.out"
    
    ''' 
